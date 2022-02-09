@@ -1904,15 +1904,34 @@
 
     .img-1 .after {
         position: absolute;
-        left: -31px;
+        left: -16px;
         width: 31%;
-        bottom: 816px;
+        bottom: 690px;
     }
+
+    .navbar-nav {
+        transform: translateX(0px);
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar {
+        outline: none;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+    }    
 
     .img-1 .img-2 {
         width: 28%;
         left: -54px;
-        bottom: 806px;
+        bottom: 663px;
         border: 9px solid var(--w);
         border-radius: 26px;
     }

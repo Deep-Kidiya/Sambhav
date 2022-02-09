@@ -908,3 +908,7 @@ footer {
   display: grid;
   justify-content: flex-start;
 }
+
+.navbar button {
+  outline: none;
+}
