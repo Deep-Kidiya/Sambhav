@@ -903,3 +903,8 @@ footer {
 .btn {
   padding: 0;
 }
+
+.p-1 {
+  display: grid;
+  justify-content: flex-start;
+}
