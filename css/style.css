@@ -412,6 +412,10 @@ header {
     .p-4 .img img {
       transform: translate(13px, -45px);
     }
+
+    .p-box .img img {
+      border-radius: 20px 20px 0 0 ;
+    }
     
     .p-box {
         margin: 21px;
@@ -630,6 +634,10 @@ header {
 
 .c-1 {
     display: none;
+}
+
+.n-1 img {
+  border-radius: 20px;
 }
 
 .company {
@@ -867,6 +875,10 @@ footer {
   outline: none;
 }
 
+.n-2 img {
+  border-radius: 20px;
+}
+
 /* =============================================== */
 
 
@@ -874,16 +886,13 @@ footer {
   --background: rgba(255, 96, 27, .2);
   --light-grey: #fff;
   --wave-color: #FF601B;
-  --width: 800px;
-  --height: 120px;
   --border-radius: var(--height);
   background: var(--background);
-  width: var(--width);
-  height: var(--height);
+
   padding: 0;
   position: relative;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  box-shadow: 0px 4px 6px 0px rgb(80 80 80 / 40%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -892,8 +901,8 @@ footer {
   overflow: hidden;
 }
 .tabs label {
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -911,7 +920,7 @@ footer {
   background: var(--wave-color);
   display: block;
   position: absolute;
-  top: -30px;
+  top: -55px;
 }
 .tabs label svg {
   width: 100%;
