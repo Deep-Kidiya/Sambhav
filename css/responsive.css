@@ -416,6 +416,14 @@
 
 @media (max-width: 1440px) {
 
+    .nav-pills {
+        background: rgba(255, 96, 27, .1);
+        box-shadow: 0px 4px 6px 0px rgb(80 80 80 / 40%);
+        border-radius: 20px;
+        border: transparent;
+        padding: 25px 24px;
+    }
+
     .carousel-inner h2 {
         font-family: var(--Great);
         font-weight: 400;
@@ -853,6 +861,17 @@
         display: block;
     }
 
+    .company .img-1 {
+        flex: 1;
+        padding: 0 0 0 35px;
+    }
+
+    .company .img-1 .img-2 {
+        width: 38%;
+        left: -142px;
+        bottom: 459px;
+    }
+
     .h1, h1 {
         font-family: var(--Pop);
         font-size: 14px;
@@ -1022,16 +1041,13 @@
 
     .company .img-1 .after {
         position: absolute;
-        left: 53px;
+        left: -14px;
         bottom: 498px;
         width: 41%;
     }
 
-    .company .img-1 .img-2 {
-        width: 38%;
-        left: -36px;
-        bottom: 459px;
-    }
+    
+
 
     .company .text-2 p {
         font-family: var(--Pop);
@@ -1269,15 +1285,15 @@
 
     .img-1 .after {
         position: absolute;
-        left: 86px;
-        width: 40%;
-        bottom: 558px;
-    }         
+        left: -36px;
+        width: 33%;
+        bottom: 634px;
+    }   
 
     .img-1 .img-2 {
-        width: 35%;
-        left: 34px;
-        bottom: 515px;
+        width: 34%;
+        left: -124px;
+        bottom: 578px;
     }
 
     .slider {
@@ -1286,25 +1302,29 @@
         bottom: -434px;
     }
 
+    #product {
+        margin-top: 75px;
+    }
+
     .company .a-5 {
         max-width: 92%;
         height: auto;
-        margin-left: 144px;
+        margin-left: 189px;
         width: 68%;
     }
 
     .company .img-1 .after {
         position: absolute;
-        left: 92px;
+        left: -15px;
         bottom: 540px;
         width: 45%;
     }
 
     .company .img-1 .img-2 {
         width: 38%;
-        left: 23px;
+        left: -111px;
         bottom: 499px;
-    }    
+    }
 
     .ni-2 {
         border-radius: 20px;
@@ -1452,11 +1472,11 @@
     }
 
     .company .a-5 {
-        margin-top: 17px;
-        max-width: 92%;
-        height: auto;
-        margin-left: 114px;
-        width: 68%;
+    margin-top: 17px;
+    max-width: 92%;
+    height: auto;
+    margin-left: 158px;
+    width: 68%;
     }
 
     .poster {
@@ -1590,13 +1610,21 @@
         position: absolute;
         left: -31px;
         width: 31%;
-        bottom: 616px;
+        bottom: 636px;
+    }
+
+    .company .a-5 {
+        margin-top: 17px;
+        max-width: 92%;
+        height: auto;
+        margin-left: 82px;
+        width: 68%;
     }
 
     .img-1 .img-2 {
-        width: 32%;
-        left: -104px;
-        bottom: 584px;
+        width: 28%;
+        left: -82px;
+        bottom: 614px;
         border: 9px solid var(--w);
         border-radius: 26px;
     }
@@ -1792,6 +1820,11 @@
 
 @media (max-width: 414px) {
 
+    #about {
+        position: relative;
+        margin-top: 69px;
+    }
+
     .empty-box {
         background: var(--LighiDark);
         width: 360px;
@@ -1947,7 +1980,7 @@
         position: absolute;
         left: -16px;
         width: 31%;
-        bottom: 690px;
+        bottom: 708px;
     }
 
     .navbar-nav {
@@ -1957,6 +1990,42 @@
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
+    }
+
+    .nav-pills {
+        background: rgba(255, 96, 27, .1);
+        box-shadow: 0px 4px 6px 0px rgb(80 80 80 / 40%);
+        border-radius: 20px;
+        border: transparent;
+        padding: 13px 4px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.5rem 11px;
+        color: var(--Dark);
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+
+    .product-box h1 {
+        position: relative;
+        font-family: var(--Great);
+        font-weight: 400;
+        font-size: 59px;
+        line-height: 90px;
+        color: var(--or);
+    }
+
+    .product-box h2 {
+        position: relative;
+        transform: translateY(-30px);
+        line-height: 44px;
+        font-family: var(--Pop);
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--w);
     }
 
     .navbar {
@@ -1972,9 +2041,9 @@
     .img-1 .img-2 {
         width: 28%;
         left: -54px;
-        bottom: 663px;
-        border: 9px solid var(--w);
-        border-radius: 26px;
+        bottom: 691px;
+        border: 6px solid var(--w);
+        border-radius: 16px;
     }
 
     .product-box {
@@ -2034,6 +2103,11 @@
     .image {
         width: 94%;
         height: 70%;
+    }
+
+    .top {
+        border-bottom: 1px solid var(--w);
+        padding: 0 0 14px;
     }
     
     .slider .team h1 {
