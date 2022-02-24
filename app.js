@@ -6,3 +6,8 @@ wrapperMenu.addEventListener('click', function(){
 
 
 // ==========================================================================
+var preloader = document.getElementById('loding');
+
+function myload(){
+    preloader.style.display = 'none';
+}

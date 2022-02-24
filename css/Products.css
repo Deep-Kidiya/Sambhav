@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+
+:root {
+    --Pop: "Poppins", sans-serif;
+    --Great: "Great Vibes", cursive;
+    --Dark: #233243;
+    --LighiDark: #888888;
+    --Read: #e4292a;
+    --or: #ff601b;
+    --yl: #ffb90f;
+    --w: #fff;
+}
+
+.top-2 {
+    justify-content: center;
+    padding: 0;
+    background:  url(../img/product.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.top-2 h1 {
+    position: relative;
+    padding: 80px ;
+    text-transform: uppercase;
+    font-family: var(--Pop);
+    font-weight: 700;
+    line-height: 78px;
+    font-size: 64px;
+    text-align: center;
+    color: var(--w);
+}
+
+.top-2 h1::after {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    left: 42%;
+    width: 124px;
+    height: 6px;
+    background: var(--or);
+    border: none;
+    border-radius: 20px;
+}
+
+.top-2 .in {
+    margin-bottom: 70px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--w);
+
+}
+
+.in .a-box {
+    background: var(--or);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.in input {
+    border: none;
+    outline: none;
+}
+
+.bottom {
+    padding: 0px 0 0;
+}
