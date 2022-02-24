@@ -909,218 +909,257 @@ footer {
 
 /* =============================================== */
 
-
-.tabs {
-  --background: rgba(255, 96, 27, .2);
-  --light-grey: #fff;
-  --wave-color: #FF601B;
-  --border-radius: var(--height);
-  background: var(--background);
-  width: 800px;
-  height: 120px;
-  padding: 0;
-  position: relative;
-  border-radius: 15px;
-  box-shadow: 0px 4px 6px 0px rgb(80 80 80 / 40%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 15px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.tabs label {
-  width: 27px;
-  height: 27px;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transform-origin: center bottom;
-}
-.tabs label::before {
-  content: "";
-  height: 4px;
-  width: 4px;
-  border-radius: 0% 100% 50% 50%/0% 50% 50% 100%;
-  transform: scale(1, 1) rotate(45deg);
-  transform-origin: 50% 50%;
-  background: var(--wave-color);
-  display: block;
-  position: absolute;
-  top: -55px;
-}
-.tabs label svg {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-.tabs label svg .icon {
-  fill: none;
-  stroke: var(--LighiDark);
-  stroke-dashoffset: 98;
-  stroke-width: 2px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: stroke 0.15s linear 0.3s;
-}
-.tabs label .wave {
-  height: 26px;
-  width: 26px;
-  position: absolute;
-  overflow: hidden;
-}
-.tabs label .wave::before, .tabs label .wave::after {
-  content: "";
-  position: absolute;
+.loader_conatiner {
+  position: fixed;
   left: 0;
-  bottom: -12px;
   right: 0;
-  background-repeat: repeat;
-  height: 14px;
-  width: 48px;
-  background-size: 12px 12px;
-  -webkit-animation: wave-animation 3s linear infinite;
-          animation: wave-animation 3s linear infinite;
-  transition: bottom 0.15s ease-out 0.35s;
-}
-.tabs label .wave::before {
-  background-image: radial-gradient(circle at 6px -3px, transparent 6px, var(--wave-color) 6px);
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  opacity: 0.5;
-}
-.tabs label .wave::after {
-  background-image: radial-gradient(circle at 6px -3px, transparent 6px, var(--wave-color) 6px);
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-.tabs label:nth-of-type(1) .wave {
-  -webkit-clip-path: url(#path-icon-01);
-          clip-path: url(#path-icon-01);
-}
-.tabs label:nth-of-type(2) .wave {
-  -webkit-clip-path: url(#path-icon-02);
-          clip-path: url(#path-icon-02);
-}
-.tabs label:nth-of-type(3) .wave {
-  -webkit-clip-path: url(#path-icon-03);
-          clip-path: url(#path-icon-03);
-}
-.tabs label:nth-of-type(4) .wave {
-  -webkit-clip-path: url(#path-icon-04);
-          clip-path: url(#path-icon-04);
-}
-.tabs input {
-  display: none;
-}
-.tabs input:checked + label {
-  -webkit-animation: wiggle-animation 1s ease 0.3s;
-          animation: wiggle-animation 1s ease 0.3s;
-}
-.tabs input:checked + label::before {
-  -webkit-animation: drop-animation 0.35s ease-in both;
-          animation: drop-animation 0.35s ease-in both;
-}
-.tabs input:checked + label svg .icon {
-  stroke: #4B4B4B;
-}
-.tabs input:checked + label .wave:before {
+  top: 0;
   bottom: 0;
 }
-.tabs input:checked + label .wave:after {
-  bottom: -4px;
+
+.loader {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg) scaleX(-1);
+}
+.loader div {
+  position: absolute;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--or);
+  border-radius: 1rem;
+  opacity: 0;
 }
 
-@-webkit-keyframes wiggle-animation {
+.loader div:nth-child(1) {
+  top: 0rem;
+  background: var(--Dark);
+  -webkit-animation: dna_rotate 2s 0s infinite ease-in-out;
+          animation: dna_rotate 2s 0s infinite ease-in-out;
+}
+
+.loader div:nth-child(2) {
+  top: 0.6rem;
+  -webkit-animation: dna_rotate 2s 1.1s infinite ease-in-out;
+          animation: dna_rotate 2s 1.1s infinite ease-in-out;
+}
+
+.loader div:nth-child(3) {
+  top: 1.2rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 0.2s infinite ease-in-out;
+          animation: dna_rotate 2s 0.2s infinite ease-in-out;
+}
+
+.loader div:nth-child(4) {
+  top: 1.8rem;
+  -webkit-animation: dna_rotate 2s 1.3s infinite ease-in-out;
+          animation: dna_rotate 2s 1.3s infinite ease-in-out;
+}
+
+.loader div:nth-child(5) {
+  top: 2.4rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 0.4s infinite ease-in-out;
+          animation: dna_rotate 2s 0.4s infinite ease-in-out;
+}
+
+.loader div:nth-child(6) {
+  top: 3rem;
+  -webkit-animation: dna_rotate 2s 1.5s infinite ease-in-out;
+          animation: dna_rotate 2s 1.5s infinite ease-in-out;
+}
+
+.loader div:nth-child(7) {
+  top: 3.6rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 0.6s infinite ease-in-out;
+          animation: dna_rotate 2s 0.6s infinite ease-in-out;
+}
+
+.loader div:nth-child(8) {
+  top: 4.2rem;
+  -webkit-animation: dna_rotate 2s 1.7s infinite ease-in-out;
+          animation: dna_rotate 2s 1.7s infinite ease-in-out;
+}
+
+.loader div:nth-child(9) {
+  top: 4.8rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 0.8s infinite ease-in-out;
+          animation: dna_rotate 2s 0.8s infinite ease-in-out;
+}
+
+.loader div:nth-child(10) {
+  top: 5.4rem;
+  -webkit-animation: dna_rotate 2s 1.9s infinite ease-in-out;
+          animation: dna_rotate 2s 1.9s infinite ease-in-out;
+}
+
+.loader div:nth-child(11) {
+  top: 6rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 1s infinite ease-in-out;
+          animation: dna_rotate 2s 1s infinite ease-in-out;
+}
+
+.loader div:nth-child(12) {
+  top: 6.6rem;
+  -webkit-animation: dna_rotate 2s 2.1s infinite ease-in-out;
+          animation: dna_rotate 2s 2.1s infinite ease-in-out;
+}
+
+.loader div:nth-child(13) {
+  top: 7.2rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 1.2s infinite ease-in-out;
+          animation: dna_rotate 2s 1.2s infinite ease-in-out;
+}
+
+.loader div:nth-child(14) {
+  top: 7.8rem;
+  -webkit-animation: dna_rotate 2s 2.3s infinite ease-in-out;
+          animation: dna_rotate 2s 2.3s infinite ease-in-out;
+}
+
+.loader div:nth-child(15) {
+  top: 8.4rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 1.4s infinite ease-in-out;
+          animation: dna_rotate 2s 1.4s infinite ease-in-out;
+}
+
+.loader div:nth-child(16) {
+  top: 9rem;
+  -webkit-animation: dna_rotate 2s 2.5s infinite ease-in-out;
+          animation: dna_rotate 2s 2.5s infinite ease-in-out;
+}
+
+.loader div:nth-child(17) {
+  top: 9.6rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 1.6s infinite ease-in-out;
+          animation: dna_rotate 2s 1.6s infinite ease-in-out;
+}
+
+.loader div:nth-child(18) {
+  top: 10.2rem;
+  -webkit-animation: dna_rotate 2s 2.7s infinite ease-in-out;
+          animation: dna_rotate 2s 2.7s infinite ease-in-out;
+}
+
+.loader div:nth-child(19) {
+  top: 10.8rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 1.8s infinite ease-in-out;
+          animation: dna_rotate 2s 1.8s infinite ease-in-out;
+}
+
+.loader div:nth-child(20) {
+  top: 11.4rem;
+  -webkit-animation: dna_rotate 2s 2.9s infinite ease-in-out;
+          animation: dna_rotate 2s 2.9s infinite ease-in-out;
+}
+
+.loader div:nth-child(21) {
+  top: 12rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 2s infinite ease-in-out;
+          animation: dna_rotate 2s 2s infinite ease-in-out;
+}
+
+.loader div:nth-child(22) {
+  top: 12.6rem;
+  -webkit-animation: dna_rotate 2s 3.1s infinite ease-in-out;
+          animation: dna_rotate 2s 3.1s infinite ease-in-out;
+}
+
+.loader div:nth-child(23) {
+  top: 13.2rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 2.2s infinite ease-in-out;
+          animation: dna_rotate 2s 2.2s infinite ease-in-out;
+}
+
+.loader div:nth-child(24) {
+  top: 13.8rem;
+  -webkit-animation: dna_rotate 2s 3.3s infinite ease-in-out;
+          animation: dna_rotate 2s 3.3s infinite ease-in-out;
+}
+
+.loader div:nth-child(25) {
+  top: 14.4rem;
+  background: #000;
+  -webkit-animation: dna_rotate 2s 2.4s infinite ease-in-out;
+          animation: dna_rotate 2s 2.4s infinite ease-in-out;
+}
+
+.loader div:nth-child(26) {
+  top: 15rem;
+  -webkit-animation: dna_rotate 2s 3.5s infinite ease-in-out;
+          animation: dna_rotate 2s 3.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes dna_rotate {
   0% {
-    transform: rotate(0deg);
+    opacity: 1;
+    transform: scale(1);
+    left: 40%;
+    z-index: 0;
   }
-  20% {
-    transform: rotate(-7deg);
+  25% {
+    opacity: 1;
+    transform: scale(1.8);
   }
-  60% {
-    transform: rotate(7deg);
+  50% {
+    opacity: 1;
+    left: 60%;
+    z-index: 1;
+    transform: scale(1);
   }
-  90% {
-    transform: rotate(-3deg);
+  75% {
+    opacity: 1;
+    transform: scale(0.5);
   }
   100% {
-    transform: rotate(0deg);
+    opacity: 1;
+    left: 40%;
+    z-index: 0;
+    transform: scale(1);
   }
 }
 
-@keyframes wiggle-animation {
+@keyframes dna_rotate {
   0% {
-    transform: rotate(0deg);
+    opacity: 1;
+    transform: scale(1);
+    left: 40%;
+    z-index: 0;
   }
-  20% {
-    transform: rotate(-7deg);
+  25% {
+    opacity: 1;
+    transform: scale(1.8);
   }
-  60% {
-    transform: rotate(7deg);
+  50% {
+    opacity: 1;
+    left: 60%;
+    z-index: 1;
+    transform: scale(1);
   }
-  90% {
-    transform: rotate(-3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes wave-animation {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-@keyframes wave-animation {
-  0% {
-    transform: translateX(0%);
+  75% {
+    opacity: 1;
+    transform: scale(0.5);
   }
   100% {
-    transform: translateX(-50%);
+    opacity: 1;
+    left: 40%;
+    z-index: 0;
+    transform: scale(1);
   }
-}
-@-webkit-keyframes drop-animation {
-  70% {
-    transform: scale(0.8, 3) rotate(45deg);
-    top: -7px;
-  }
-  100% {
-    transform: scale(1.5, 0.5) rotate(45deg);
-    top: 19px;
-  }
-}
-@keyframes drop-animation {
-  70% {
-    transform: scale(0.8, 3) rotate(45deg);
-    top: -7px;
-  }
-  100% {
-    transform: scale(1.5, 0.5) rotate(45deg);
-    top: 19px;
-  }
-}
-
-body .socials {
-  position: fixed;
-  display: block;
-  left: 20px;
-  bottom: 20px;
-}
-body .socials > a {
-  display: block;
-  width: 30px;
-  opacity: 0.2;
-  transform: scale(var(--scale, 0.8));
-  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
-}
-body .socials > a:hover {
-  --scale: 1;
 }
 
 /*  */
