@@ -9,6 +9,7 @@
     --LighiDark: #888888;
     --Read: #e4292a;
     --or: #ff601b;
+    --L-or: #FFF7F3;
     --yl: #ffb90f;
     --w: #fff;
 }
@@ -156,4 +157,42 @@
 
 #product {
     margin-top: 60px;
+}
+
+
+
+
+
+
+
+.nav-pills {
+    background: transparent;
+    box-shadow: 0px 0 0px 0px rgb(80 80 80 / 40%);
+    border-radius: 20px;
+    border: transparent;
+    padding: 35px 45px;
+}
+
+.nav-text {
+    padding: 0 3px;
+    border-radius: 10px;
+}
+
+.nav-item .text {
+    border-radius: 10px;
+    padding: 0px 3px;
+}
+
+footer {
+    margin: 1px 0 0;
+    background: var(--Dark);
+    padding: 102px 112px 2px;
+}
+
+.nav-pills {
+    background: transparent;
+    box-shadow: 0px 0 0px 0px rgb(80 80 80 / 40%);
+    border-radius: 20px;
+    border: transparent;
+    padding: 35px 0;
 }

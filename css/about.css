@@ -124,3 +124,40 @@
 .company .text-2 h3 {
     padding: 0 58px 23px 0;
 }
+.mess input {
+    padding: 26px 853px 200px 30px;
+}
+
+.contant-box {
+    padding: 20px 0;
+    align-items: center;
+}
+
+.box {
+    margin: 0 0 0 35%;
+    padding: 25px 50px;
+    background: var(--w);
+    border-radius: 20px;
+}
+
+.o-box {
+    background: var(--or);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.text {
+    padding: 0 ;
+}
+
+
+.text h2 {
+    color: var(--LighiDark);
+    font-family: var(--Pop);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+}
+
