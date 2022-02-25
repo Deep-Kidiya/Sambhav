@@ -94,7 +94,7 @@
 }
 
 .box {
-    margin: 15px 0 0 10%;
+    margin: 15px 0 0 1%;
     padding: 30px;
     background: var(--w);
     border-radius: 20px;
@@ -195,4 +195,146 @@ footer {
     border-radius: 20px;
     border: transparent;
     padding: 35px 0;
+}
+
+@media (max-width:1280px) {
+    .p-box .btn img {
+        padding: 0px 0 20px;
+        margin: -16px 0 0 -139px;
+    }
+
+    .p-box .img img {
+        padding: 38px 0 10px;
+        width: 83%;
+        margin: 0 25px;
+        border-radius: 30px;
+    }
+
+}
+
+@media (max-width:1024px) {
+ 
+    .p-box .btn img {
+        padding: 0px 0 20px;
+        margin: -16px 0 0 -209px;
+    }
+
+    .text {
+        padding: 0 22px;
+    }
+
+}
+
+@media (max-width:912px) {
+    .text {
+        padding: 0 22px;
+    }
+
+    .p-box .btn img {
+        padding: 0px 0 20px;
+        margin: -17px 0 0 -183px;
+    }
+
+    .contant-box h2 {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:820px) {
+    .p-box .btn img {
+        padding: 0px 0 20px;
+        margin: -17px 0 0 -148px;
+    }
+
+    .box {
+        margin: 15px 0 0 1%;
+        padding: 0;
+        background: var(--w);
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width:820px) {
+    .p-box .btn img {
+        padding: 0px 0 20px;
+        margin: -17px 0 0 -128px;
+    }
+}
+
+
+@media (max-width:600px) {
+    
+    .contant-box {
+        text-align: center;
+        padding: 20px 0;
+        align-items: center;
+    }
+    
+    .contant-box h1 {
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    .contant-box h1::after {
+        content: '';
+        position: absolute;
+        background: var(--or);
+        width: 55px;
+        height: 4px;
+        border-radius: 5px;
+        bottom: -13px;
+        left: 185px;
+    }
+    
+    .top-2 h1 {
+        position: relative;
+        padding: 61px;
+        text-transform: uppercase;
+        font-family: var(--Pop);
+        font-weight: 700;
+        line-height: 78px;
+        font-size: 37px;
+        text-align: center;
+        color: var(--w);
+    }
+    
+    .top-2 h1::after {
+        content: '';
+        position: absolute;
+        bottom: 41px;
+        left: 36%;
+        width: 124px;
+        height: 6px;
+        background: var(--or);
+        border: none;
+        border-radius: 20px;
+    }
+    
+}
+
+@media (max-width:820px) {
+
+    .top-2 h1 {
+        position: relative;
+        padding: 25px 20px;
+        text-transform: uppercase;
+        font-family: var(--Pop);
+        font-weight: 700;
+        line-height: 78px;
+        font-size: 37px;
+        text-align: center;
+        color: var(--w);
+    }
+
+    .contant-box h1::after {
+        left: 166px;
+    }
+
+    .p-box .btn img {
+        padding: 0px 0 20px;
+        margin: -17px 0 0 -246px;
+    }
+
 }
