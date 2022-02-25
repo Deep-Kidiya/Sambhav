@@ -93,8 +93,8 @@
 }
 
 .box {
-    margin: 0 0 0 10%;
-    padding: 25px 50px;
+    margin: 15px 0 0 10%;
+    padding: 30px;
     background: var(--w);
     border-radius: 20px;
 }
@@ -107,24 +107,51 @@
 }
 
 .text {
-    padding: 0 0 0  40px;
+    padding: 0 0 0;
 }
 
-.text h1 {
+.contant-box h1 {
+    padding: 0 20px;
+    text-align: start;
     color: #000;
     font-family: var(--Pop);
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+    position: relative;
 }
 
-.text h2 {
-    color: var(--LighiDark);
+.contant-box h1::after {
+    content: '';
+    position: absolute;
+    background: var(--or);
+    width: 55px;
+    height: 4px;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 20px;
+}
+
+.contant-box h2 {
+    margin-top: 20px;
+    background: #FFF7F3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--Dark);
     font-family: var(--Pop);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 36px;
+}
 
+.contant-box h3 {
+    padding: 10px 20px;
+
+    color: var(--Dark);
+    font-family: var(--Pop);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
 }
 
 #product {
